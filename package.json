@@ -1,15 +1,21 @@
 {
-  "name": "my-playwright-test",
+  "name": "playwright-eventswidget-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automated tests for 3Snet events widget",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:firefox": "playwright test --project=firefox",
+    "test:chrome": "playwright test --project=chromium",
+    "report": "playwright show-report"
+  },
+  "keywords": ["playwright", "testing", "automation", "qa", "3snet"],
+  "author": "Your Name",
+  "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.1"
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0"
   }
 }
